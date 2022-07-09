@@ -39,7 +39,7 @@ namespace ChessClassification
 
         #endregion
 
-        private static string MLNetModelPath = Path.GetFullPath("ModelClassification.zip");
+        private static readonly string MLNetModelPath = Path.GetFullPath("ModelClassification.zip");
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 

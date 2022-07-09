@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Border Margin="30,25,400,185" BorderBrush="Blue" BorderThickness="1" >
+            <Image x:Name="ImageView" />
+        </Border>
+        <Button Content="Классифицирова" Margin="260,260,400,149" Click="OpenButton_Click"/>
+        <TextBlock x:Name="ResultText" Text="" TextAlignment="Center" Margin="435,25,210,383"/>
     </Grid>
 </Window>
